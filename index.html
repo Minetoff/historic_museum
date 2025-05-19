@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цифровая революция: интерактивный музей</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Цифровая революция</h1>
+            <p>Интерактивный музей</p>
+        </div>
+        <nav>
+            <ul class="tabs">
+                <li class="tab active" data-tab="mainframe">Эра мейнфреймов</li>
+                <li class="tab" data-tab="personal">Персональные компьютеры</li>
+                <li class="tab" data-tab="internet">Интернет</li>
+                <li class="tab" data-tab="mobile">Мобильные устройства</li>
+                <li class="tab" data-tab="ai">Искусственный интеллект</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mainframe" class="tab-content active">
+            <h2>Эра мейнфреймов (1940-е - 1960-е)</h2>
+            <p class="era-description">Первые электронные вычислительные машины, занимавшие целые комнаты и использовавшиеся для научных и военных расчетов.</p>
+            
+            <div class="exhibits-grid">
+                <div class="exhibit-card" data-id="eniac">
+                    <img src="images/eniac.jpg" alt="ENIAC">
+                    <h3>ENIAC (1945)</h3>
+                    <p>Первый электронный цифровой компьютер общего назначения</p>
+                </div>
+                <div class="exhibit-card" data-id="univac">
+                    <img src="images/univac.jpg" alt="UNIVAC I">
+                    <h3>UNIVAC I (1951)</h3>
+                    <p>Первый коммерческий компьютер в США</p>
+                </div>
+                <div class="exhibit-card" data-id="ibm360">
+                    <img src="images/ibm360.jpg" alt="IBM System/360">
+                    <h3>IBM System/360 (1964)</h3>
+                    <p>Первое семейство совместимых компьютеров</p>
+                </div>
+                <div class="exhibit-card" data-id="cray1">
+                    <img src="images/cray1.jpg" alt="Cray-1">
+                    <h3>Cray-1 (1976)</h3>
+                    <p>Революционный суперкомпьютер</p>
+                </div>
+            </div>
+            
+            <!-- Интерактивный элемент (викторина) для вкладки мейнфреймов -->
+            <div class="interactive-element">
+                <h3>Проверьте свои знания!</h3>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p>В каком году был создан первый электронный компьютер ENIAC?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-correct="false">1940</button>
+                            <button class="quiz-option" data-correct="true">1945</button>
+                            <button class="quiz-option" data-correct="false">1950</button>
+                            <button class="quiz-option" data-correct="false">1955</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="personal" class="tab-content">
+            <h2>Персональные компьютеры (1970-е - 1980-е)</h2>
+            <p class="era-description">Эпоха, когда компьютеры стали доступны для обычных пользователей, положив начало информационной революции.</p>
+            
+            <div class="exhibits-grid">
+                <div class="exhibit-card" data-id="altair8800">
+                    <img src="images/altair8800.jpg" alt="Altair 8800">
+                    <h3>Altair 8800 (1975)</h3>
+                    <p>Первый коммерчески успешный персональный компьютер</p>
+                </div>
+                <div class="exhibit-card" data-id="apple2">
+                    <img src="images/apple2.jpg" alt="Apple II">
+                    <h3>Apple II (1977)</h3>
+                    <p>Один из первых массовых персональных компьютеров</p>
+                </div>
+                <div class="exhibit-card" data-id="macintosh">
+                    <img src="images/macintosh.jpg" alt="Macintosh">
+                    <h3>Macintosh (1984)</h3>
+                    <p>Первый массовый компьютер с графическим интерфейсом</p>
+                </div>
+            </div>
+            
+            <!-- Интерактивный элемент (викторина) для вкладки персональных компьютеров -->
+            <div class="interactive-element">
+                <h3>Проверьте свои знания!</h3>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p>Какая компания выпустила первый массовый персональный компьютер с графическим интерфейсом?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-correct="false">IBM</button>
+                            <button class="quiz-option" data-correct="true">Apple</button>
+                            <button class="quiz-option" data-correct="false">Microsoft</button>
+                            <button class="quiz-option" data-correct="false">Commodore</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="internet" class="tab-content">
+            <h2>Интернет (1980-е - 2000-е)</h2>
+            <p class="era-description">Развитие глобальной сети, соединившей компьютеры по всему миру и создавшей новую информационную среду.</p>
+            
+            <div class="exhibits-grid">
+                <div class="exhibit-card" data-id="arpanet">
+                    <img src="images/arpanet.jpg" alt="ARPANET">
+                    <h3>ARPANET (1969)</h3>
+                    <p>Предшественник современного интернета</p>
+                </div>
+                <div class="exhibit-card" data-id="www">
+                    <img src="images/www.jpg" alt="World Wide Web">
+                    <h3>World Wide Web (1989-1991)</h3>
+                    <p>Система гипертекстовых документов, основа современного веба</p>
+                </div>
+                <div class="exhibit-card" data-id="browser">
+                    <img src="images/browser.jpg" alt="Первые браузеры">
+                    <h3>Первые браузеры (1993-1995)</h3>
+                    <p>Mosaic и Netscape Navigator открыли интернет для массового пользователя</p>
+                </div>
+            </div>
+            
+            <!-- Интерактивный элемент (викторина) для вкладки интернета -->
+            <div class="interactive-element">
+                <h3>Проверьте свои знания!</h3>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p>Кто изобрел World Wide Web (WWW)?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-correct="false">Билл Гейтс</button>
+                            <button class="quiz-option" data-correct="false">Стив Джобс</button>
+                            <button class="quiz-option" data-correct="true">Тим Бернерс-Ли</button>
+                            <button class="quiz-option" data-correct="false">Марк Цукерберг</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile" class="tab-content">
+            <h2>Мобильные устройства (2000-е - 2010-е)</h2>
+            <p class="era-description">Эпоха, когда вычислительные мощности стали портативными, а интернет - повсеместным.</p>
+            
+            <div class="exhibits-grid">
+                <div class="exhibit-card" data-id="blackberry">
+                    <img src="images/blackberry.jpg" alt="BlackBerry">
+                    <h3>BlackBerry (2002)</h3>
+                    <p>Первые популярные смартфоны для бизнеса</p>
+                </div>
+                <div class="exhibit-card" data-id="iphone">
+                    <img src="images/iphone.jpg" alt="iPhone">
+                    <h3>iPhone (2007)</h3>
+                    <p>Революция в мире смартфонов с сенсорным экраном</p>
+                </div>
+                <div class="exhibit-card" data-id="android">
+                    <img src="images/android.jpg" alt="Android">
+                    <h3>Android (2008)</h3>
+                    <p>Открытая мобильная операционная система</p>
+                </div>
+            </div>
+            
+            <!-- Интерактивный элемент (викторина) для вкладки мобильных устройств -->
+            <div class="interactive-element">
+                <h3>Проверьте свои знания!</h3>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p>В каком году был представлен первый iPhone?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-correct="false">2005</button>
+                            <button class="quiz-option" data-correct="true">2007</button>
+                            <button class="quiz-option" data-correct="false">2009</button>
+                            <button class="quiz-option" data-correct="false">2010</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ai" class="tab-content">
+            <h2>Искусственный интеллект (2010-е - настоящее время)</h2>
+            <p class="era-description">Современная эпоха, когда машины учатся думать и решать сложные задачи, меняя наше представление о технологиях.</p>
+            
+            <div class="exhibits-grid">
+                <div class="exhibit-card" data-id="deepblue">
+                    <img src="images/deep.jpg" alt="Deep Blue">
+                    <h3>Deep Blue (1997)</h3>
+                    <p>Компьютер, победивший чемпиона мира по шахматам</p>
+                </div>
+                <div class="exhibit-card" data-id="watson">
+                    <img src="images/watson.jpg" alt="IBM Watson">
+                    <h3>IBM Watson (2011)</h3>
+                    <p>Система искусственного интеллекта, победившая в игре "Jeopardy!"</p>
+                </div>
+                <div class="exhibit-card" data-id="gpt">
+                    <img src="images/gpt.jpg" alt="GPT">
+                    <h3>GPT (2020-е)</h3>
+                    <p>Языковые модели, способные генерировать человекоподобный текст</p>
+                </div>
+            </div>
+            
+            <!-- Интерактивный элемент (викторина) для вкладки искусственного интеллекта -->
+            <div class="interactive-element">
+                <h3>Проверьте свои знания!</h3>
+                <div class="quiz-container">
+                    <div class="quiz-question">
+                        <p>Какая система искусственного интеллекта победила чемпиона мира по шахматам Гарри Каспарова?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-option" data-correct="true">Deep Blue</button>
+                            <button class="quiz-option" data-correct="false">Watson</button>
+                            <button class="quiz-option" data-correct="false">AlphaGo</button>
+                            <button class="quiz-option" data-correct="false">GPT</button>
+                        </div>
+                        <div class="quiz-feedback"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="timeline">
+            <div class="timeline-marker" data-year="1945" data-tab="mainframe"></div>
+            <div class="timeline-marker" data-year="1975" data-tab="personal"></div>
+            <div class="timeline-marker" data-year="1990" data-tab="internet"></div>
+            <div class="timeline-marker" data-year="2007" data-tab="mobile"></div>
+            <div class="timeline-marker" data-year="2020" data-tab="ai"></div>
+            <div class="timeline-progress"></div>
+        </div>
+    </main>
+
+    <!-- Модальные окна для экспонатов -->
+    <div class="modal" id="modal-eniac">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>ENIAC (1945)</h2>
+            <img src="images/eniac.jpg" alt="ENIAC" class="modal-image">
+            <p>ENIAC (Electronic Numerical Integrator and Computer) — первый электронный цифровой вычислитель общего назначения, который можно было перепрограммировать для решения широкого спектра задач.</p>
+            <p>Разработан Джоном Преспером Эккертом и Джоном Уильямом Мокли в Пенсильванском университете по заказу Армии США для расчётов таблиц стрельбы.</p>
+            <p>Характеристики:</p>
+            <ul>
+                <li>Вес: 27 тонн</li>
+                <li>Потребляемая мощность: 174 кВт</li>
+                <li>Содержал 17 468 электронных ламп</li>
+                <li>Выполнял около 5000 операций сложения в секунду</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-univac">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>UNIVAC I (1951)</h2>
+            <img src="images/univac.jpg" alt="UNIVAC I" class="modal-image">
+            <p>UNIVAC I (UNIVersal Automatic Computer I) — первый коммерческий компьютер, созданный в США, и третий коммерческий компьютер в мире.</p>
+            <p>Разработан той же командой, что и ENIAC — Джоном Преспером Эккертом и Джоном Уильямом Мокли. Первый экземпляр был поставлен в Бюро переписи населения США.</p>
+            <p>Характеристики:</p>
+            <ul>
+                <li>Вес: 13 тонн</li>
+                <li>Потребляемая мощность: 125 кВт</li>
+                <li>Оперативная память: 1000 слов</li>
+                <li>Выполнял около 1905 операций в секунду</li>
+                <li>Стоимость: $750,000 ($7.5 млн в современных деньгах)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-ibm360">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>IBM System/360 (1964)</h2>
+            <img src="images/ibm360.jpg" alt="IBM System/360" class="modal-image">
+            <p>IBM System/360 — семейство мейнфреймов, представленное IBM 7 апреля 1964 года.</p>
+            <p>Это была первая линейка компьютеров, спроектированных для покрытия полного спектра приложений, от малых до крупных, как для коммерческого, так и для научного использования.</p>
+            <p>Особенности:</p>
+            <ul>
+                <li>Первая компьютерная архитектура, разделившая программное обеспечение от аппаратного</li>
+                <li>Использовала микрокод для реализации инструкций</li>
+                <li>Поддерживала обратную совместимость между моделями</li>
+                <li>Стала стандартом для мейнфреймов на десятилетия вперед</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-cray1">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Cray-1 (1976)</h2>
+            <img src="images/cray1.jpg" alt="Cray-1" class="modal-image">
+            <p>Cray-1 — первый коммерчески успешный суперкомпьютер, созданный Сеймуром Крэем.</p>
+            <p>Представленный в 1976 году, он имел характерную С-образную форму, которая была разработана для сокращения длины проводов и повышения скорости работы.</p>
+            <p>Характеристики:</p>
+            <ul>
+                <li>Производительность: 160 миллионов операций с плавающей запятой в секунду</li>
+                <li>Память: 8 мегабайт (очень большая по тем временам)</li>
+                <li>Стоимость: от $5 до $8 миллионов</li>
+                <li>Вес: 5.5 тонн</li>
+                <li>Потребляемая мощность: 115 кВт</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-altair8800">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Altair 8800 (1975)</h2>
+            <img src="images/altair8800.jpg" alt="Altair 8800" class="modal-image">
+            <p>Altair 8800 — один из первых персональных компьютеров, созданный компанией MITS.</p>
+            <p>Он был представлен на обложке журнала Popular Electronics в январе 1975 года и продавался в виде набора для сборки.</p>
+            <p>Значение:</p>
+            <ul>
+                <li>Считается катализатором революции персональных компьютеров</li>
+                <li>Для него Билл Гейтс и Пол Аллен написали интерпретатор BASIC, что привело к созданию Microsoft</li>
+                <li>Вдохновил создание компьютерного клуба Homebrew, где Стив Возняк представил прототип Apple I</li>
+                <li>Стоимость: $439 в виде набора или $621 в собранном виде</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-apple2">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Apple II (1977)</h2>
+            <img src="images/apple2.jpg" alt="Apple II" class="modal-image">
+            <p>Apple II — один из первых массовых персональных компьютеров, разработанный Стивом Возняком.</p>
+            <p>Представленный в 1977 году, он отличался цветной графикой, звуком и возможностью расширения.</p>
+            <p>Особенности:</p>
+            <ul>
+                <li>Первый компьютер с цветной графикой для массового рынка</li>
+                <li>Открытая архитектура с восемью слотами расширения</li>
+                <li>Встроенный интерпретатор BASIC</li>
+                <li>Первая "киллер-программа" — электронная таблица VisiCalc (1979)</li>
+                <li>Производился до начала 1990-х годов</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-macintosh">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Macintosh (1984)</h2>
+            <img src="images/macintosh.jpg" alt="Macintosh" class="modal-image">
+            <p>Apple Macintosh — первый коммерчески успешный персональный компьютер с графическим пользовательским интерфейсом и мышью.</p>
+            <p>Представлен 24 января 1984 года знаменитой рекламой "1984", показанной во время Супербоула.</p>
+            <p>Революционные особенности:</p>
+            <ul>
+                <li>Графический интерфейс с окнами, иконками, меню и указателем (WIMP)</li>
+                <li>Мышь как стандартное устройство ввода</li>
+                <li>Компактный дизайн "все-в-одном"</li>
+                <li>Простота использования для обычных пользователей</li>
+                <li>Программы MacPaint и MacWrite, демонстрирующие возможности WYSIWYG</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-arpanet">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>ARPANET (1969)</h2>
+            <img src="images/arpanet.jpg" alt="ARPANET" class="modal-image">
+            <p>ARPANET (Advanced Research Projects Agency Network) — первая в мире сеть с коммутацией пакетов и прямой предшественник современного интернета.</p>
+            <p>Первое сообщение было отправлено 29 октября 1969 года между компьютерами в Калифорнийском университете Лос-Анджелеса и Стэнфордском исследовательском институте.</p>
+            <p>Ключевые инновации:</p>
+            <ul>
+                <li>Коммутация пакетов вместо коммутации каналов</li>
+                <li>Распределенная архитектура без единой точки отказа</li>
+                <li>Протоколы NCP, позже замененные на TCP/IP</li>
+                <li>К 1973 году сеть стала международной, соединившись с университетами в Великобритании и Норвегии</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-www">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>World Wide Web (1989-1991)</h2>
+            <img src="images/www.jpg" alt="World Wide Web" class="modal-image">
+            <p>World Wide Web (WWW) — система взаимосвязанных гипертекстовых документов, доступных через интернет.</p>
+            <p>Изобретена Тимом Бернерсом-Ли в 1989 году, когда он работал в CERN. Первый в мире веб-сайт, info.cern.ch, был запущен 6 августа 1991 года.</p>
+            <p>Основные компоненты, разработанные Бернерсом-Ли:</p>
+            <ul>
+                <li>HTML (HyperText Markup Language) — язык разметки гипертекста</li>
+                <li>HTTP (HyperText Transfer Protocol) — протокол передачи гипертекста</li>
+                <li>URL (Uniform Resource Locator) — унифицированный указатель ресурса</li>
+                <li>Первый веб-сервер</li>
+                <li>Первый веб-браузер WorldWideWeb (позже переименован в Nexus)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-browser">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Первые браузеры (1993-1995)</h2>
+            <img src="images/browser.jpg" alt="Первые браузеры" class="modal-image">
+            <p>Первые графические веб-браузеры сделали интернет доступным для массового пользователя.</p>
+            <p>Mosaic (1993) и Netscape Navigator (1994) произвели революцию в способе взаимодействия людей с веб-контентом.</p>
+            <p>Ключевые инновации:</p>
+            <ul>
+                <li>Отображение текста и изображений на одной странице</li>
+                <li>Интуитивно понятный графический интерфейс</li>
+                <li>Поддержка различных протоколов (HTTP, FTP, Gopher)</li>
+                <li>Закладки для сохранения любимых сайтов</li>
+                <li>Netscape Navigator занимал более 90% рынка браузеров к 1995 году</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-blackberry">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>BlackBerry (2002)</h2>
+            <img src="images/blackberry.jpg" alt="BlackBerry" class="modal-image">
+            <p>BlackBerry — линейка смартфонов, разработанных канадской компанией Research In Motion (RIM).</p>
+            <p>Первый BlackBerry с телефонной функциональностью был выпущен в 2002 году и быстро стал популярным среди бизнес-пользователей.</p>
+            <p>Отличительные особенности:</p>
+            <ul>
+                <li>Физическая QWERTY-клавиатура</li>
+                <li>Надежная работа с электронной почтой в реальном времени</li>
+                <li>Высокий уровень безопасности данных</li>
+                <li>BlackBerry Messenger (BBM) — популярный сервис мгновенных сообщений</li>
+                <li>На пике популярности в 2009 году занимал около 20% мирового рынка смартфонов</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-iphone">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>iPhone (2007)</h2>
+            <img src="images/iphone.jpg" alt="iPhone" class="modal-image">
+            <p>iPhone — революционный смартфон, представленный Стивом Джобсом 9 января 2007 года.</p>
+            <p>Он объединил функции телефона, интернет-коммуникатора и медиаплеера в одном устройстве с инновационным мультисенсорным интерфейсом.</p>
+            <p>Революционные особенности:</p>
+            <ul>
+                <li>Полностью сенсорный экран без физической клавиатуры</li>
+                <li>Мультитач-интерфейс с жестами (пинч, свайп, тап)</li>
+                <li>Полноценный веб-браузер Safari</li>
+                <li>App Store (с 2008 года) — магазин приложений, создавший новую экосистему</li>
+                <li>Интуитивно понятный интерфейс, доступный для обычных пользователей</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-android">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Android (2008)</h2>
+            <img src="images/android.jpg" alt="Android" class="modal-image">
+            <p>Android — мобильная операционная система с открытым исходным кодом, разработанная компанией Android Inc., которую Google приобрела в 2005 году.</p>
+            <p>Первый коммерческий смартфон на Android, HTC Dream (T-Mobile G1), был выпущен в октябре 2008 года.</p>
+            <p>Ключевые особенности:</p>
+            <ul>
+                <li>Открытый исходный код и гибкость для производителей</li>
+                <li>Google Play Store с миллионами приложений</li>
+                <li>Интеграция с сервисами Google</li>
+                <li>Поддержка различных аппаратных платформ</li>
+                <li>Сегодня Android используется на более чем 70% смартфонов в мире</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-deepblue">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Deep Blue (1997)</h2>
+            <img src="images/deep.jpg" alt="Deep Blue" class="modal-image">
+            <p>Deep Blue — суперкомпьютер, разработанный IBM специально для игры в шахматы.</p>
+            <p>В 1997 году он стал первым компьютером, победившим действующего чемпиона мира по шахматам Гарри Каспарова в матче из шести партий.</p>
+            <p>Технические характеристики:</p>
+            <ul>
+                <li>32 процессора IBM Power2 Super Chip</li>
+                <li>Оценивал 200 миллионов позиций в секунду</li>
+                <li>Использовал комбинацию грубой вычислительной силы и специализированных шахматных знаний</li>
+                <li>Победил Каспарова со счетом 3.5-2.5 (1 победа, 2 ничьи, 3 поражения)</li>
+                <li>Это историческое событие продемонстрировало потенциал искусственного интеллекта</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-watson">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>IBM Watson (2011)</h2>
+            <img src="images/watson.jpg" alt="IBM Watson" class="modal-image">
+            <p>IBM Watson — система искусственного интеллекта, способная отвечать на вопросы, заданные на естественном языке.</p>
+            <p>В 2011 году Watson соревновался в телевизионной игре Jeopardy! против бывших чемпионов Кена Дженнингса и Брэда Раттера и победил.</p>
+            <p>Ключевые возможности:</p>
+            <ul>
+                <li>Понимание естественного языка, включая каламбуры и метафоры</li>
+                <li>Обработка и анализ огромных объемов неструктурированных данных</li>
+                <li>Машинное обучение для постоянного улучшения ответов</li>
+                <li>После Jeopardy! Watson был адаптирован для использования в здравоохранении, финансах и других отраслях</li>
+                <li>Продемонстрировал возможности ИИ в понимании и обработке человеческого языка</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-gpt">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>GPT (2020-е)</h2>
+            <img src="images/gpt.jpg" alt="GPT" class="modal-image">
+            <p>GPT (Generative Pre-trained Transformer) — серия моделей обработки естественного языка, разработанных OpenAI.</p>
+            <p>Начиная с GPT-1 в 2018 году и продолжая GPT-2, GPT-3 и GPT-4, эти модели произвели революцию в области искусственного интеллекта.</p>
+            <p>Возможности и применения:</p>
+            <ul>
+                <li>Генерация человекоподобного текста на различные темы</li>
+                <li>Перевод языков с высокой точностью</li>
+                <li>Написание различных видов творческого контента (стихи, рассказы, сценарии)</li>
+                <li>Ответы на вопросы в информативной и естественной манере</li>
+                <li>Помощь в программировании, образовании, бизнесе и других областях</li>
+                <li>GPT-4 (2023) демонстрирует мультимодальные возможности, работая с текстом и изображениями</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Цифровая революция: интерактивный музей</p>
+        <p>Авторы: Ловыгин Максим, Токписев Дмитрий, Балин Арсений, Горбунов Сергей, Маликов Роберт</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
